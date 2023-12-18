@@ -1,0 +1,52 @@
+﻿<Window x:Class="HW_WPF_CalcUpgrd.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HW_WPF_CalcUpgrd"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="450">
+    <Grid Background="#FF1F1B1B">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="14*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="Hist" Grid.Row="0" Background="#FF1F1B1B" Foreground="White" HorizontalAlignment="Right" TextAlignment="Center"/>
+        <TextBox Name="Disp" Grid.Row="1" Background="#FF1F1B1B" Foreground="White" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" IsReadOnly="True" FontSize="40" />
+        <Grid Grid.Row="2" Background="#FF1F1B1B">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Name="ClAll" Grid.Column="0" Grid.Row="0" Background="#FF1F1B1B" Foreground="White" Content="CE" Click="ClAllClick"/>
+            <Button Name="Cl" Grid.Column="1" Grid.Row="0" Background="#FF1F1B1B" Foreground="White" Content="C" Click="ClCLick"/>
+            <Button Name="Del" Grid.Column="2" Grid.Row="0" Background="#FF1F1B1B" Foreground="White" Content="&lt;" Click="DelClick"/>
+            <Button Name="Div"  Grid.Column="3" Grid.Row="0" Background="#FF1F1B1B" Foreground="White" Content="/" Click="OpClick"/>
+            <Button Name="Seven" Grid.Column="0" Grid.Row="1" Background="#FF1F1B1B" Foreground="White" Content="7" Click="NumbClick"/>
+            <Button Name="Eig" Grid.Column="1" Grid.Row="1" Background="#FF1F1B1B" Foreground="White" Content="8" Click="NumbClick"/>
+            <Button Name="Nine" Grid.Column="2" Grid.Row="1" Background="#FF1F1B1B" Foreground="White" Content="9" Click="NumbClick"/>
+            <Button Name="Mult" Grid.Column="3" Grid.Row="1" Background="#FF1F1B1B" Foreground="White" Content="*" Click="OpClick"/>
+            <Button Name="Four" Grid.Column="0" Grid.Row="2" Background="#FF1F1B1B" Foreground="White" Content="4" Click="NumbClick"/>
+            <Button Name="Five" Grid.Column="1" Grid.Row="2" Background="#FF1F1B1B" Foreground="White" Content="5" Click="NumbClick"/>
+            <Button Name="Six" Grid.Column="2" Grid.Row="2" Background="#FF1F1B1B" Foreground="White" Content="6" Click="NumbClick"/>
+            <Button Name="Minus" Grid.Column="3" Grid.Row="2" Background="#FF1F1B1B" Foreground="White" Content="-" Click="OpClick"/>
+            <Button Name="One" Grid.Column="0" Grid.Row="3" Background="#FF1F1B1B" Foreground="White" Content="1" Click="NumbClick"/>
+            <Button Name="Two" Grid.Column="1" Grid.Row="3" Background="#FF1F1B1B" Foreground="White" Content="2" Click="NumbClick"/>
+            <Button Name="Three" Grid.Column="2" Grid.Row="3" Background="#FF1F1B1B" Foreground="White" Content="3" Click="NumbClick"/>
+            <Button Name="Plus" Grid.Column="3" Grid.Row="3" Background="#FF1F1B1B" Foreground="White" Content="+" Click="OpClick"/>
+            <Button Name="Dot" Grid.Column="0" Grid.Row="4" Background="#FF1F1B1B" Foreground="White" Content="," Click="NumbClick"/>
+            <Button Name="Zero" Grid.Column="1" Grid.Row="4" Background="#FF1F1B1B" Foreground="White" Content="0" Click="NumbClick"/>
+            <Button Name="Res" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" Background="#FF1F1B1B" Foreground="White" Content="=" Click="OpClick"/>
+        </Grid>
+    </Grid>
+</Window>
